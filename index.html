@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026年カレンダー (背景色付き・休日一覧)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .calendar-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #e9e9e9;
+        }
+        /* 土日の背景色設定 */
+        .sunday-bg {
+            background-color: #FFEBEE; /* 薄い赤色 */
+            color: #D32F2F; /* 濃い赤色の文字 */
+            font-weight: bold;
+        }
+        .saturday-bg {
+            background-color: #E3F2FD; /* 薄い青色 */
+            color: #1976D2; /* 濃い青色の文字 */
+            font-weight: bold;
+        }
+        /* 平日の祝日も背景色を塗る */
+        .holiday-bg {
+            background-color: #FFEBEE; /* 薄い赤色 */
+            color: #D32F2F;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>2026年カレンダー</h1>
+
+    <div class="calendar-container">
+        <!-- 1月 -->
+        <table>
+            <caption>2026年1月</caption>
+            <thead>
+                <tr>
+                    <th class="sunday-bg">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="saturday-bg">土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td></td><td></td><td></td><td></td><td class="holiday-bg" title="元日">1</td><td class="holiday-bg" title="元日">2</td><td class="saturday-bg">3</td></tr>
+                <tr><td class="sunday-bg">4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td class="saturday-bg">10</td></tr>
+                <tr><td class="sunday-bg">11</td><td class="holiday-bg" title="成人の日">12</td><td>13</td><td>14</td><td>15</td><td>16</td><td class="saturday-bg">17</td></tr>
+                <tr><td class="sunday-bg">18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td class="saturday-bg">24</td></tr>
+                <tr><td class="sunday-bg">25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td class="saturday-bg">31</td></tr>
+            </tbody>
+        </table>
+        <!-- 2月 -->
+        <table>
+            <caption>2026年2月</caption>
+            <thead>
+                <tr>
+                    <th class="sunday-bg">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="saturday-bg">土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td class="sunday-bg">1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td class="saturday-bg">7</td></tr>
+                <tr><td class="sunday-bg">8</td><td>9</td><td>10</td><td class="holiday-bg" title="建国記念の日">11</td><td>12</td><td>13</td><td class="saturday-bg">14</td></tr>
+                <tr><td class="sunday-bg">15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td class="saturday-bg">21</td></tr>
+                <tr><td class="sunday-bg">22</td><td class="holiday-bg" title="天皇誕生日">23</td><td>24</td><td>25</td><td>26</td><td>27</td><td class="saturday-bg">28</td></tr>
+            </tbody>
+        </table>
+        <!-- 3月 -->
+        <table>
+            <caption>2026年3月</caption>
+            <thead>
+                <tr>
+                    <th class="sunday-bg">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="saturday-bg">土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td class="sunday-bg">1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td class="saturday-bg">7</td></tr>
+                <tr><td class="sunday-bg">8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td class="saturday-bg">14</td></tr>
+                <tr><td class="sunday-bg">15</td><td>16</td><td>17</td><td>18</td><td>19</td><td class="holiday-bg" title="春分の日">20</td><td class="saturday-bg">21</td></tr>
+                <tr><td class="sunday-bg">22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td class="saturday-bg">28</td></tr>
+                <tr><td class="sunday-bg">29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+        <!-- 4月 -->
+        <table>
+            <caption>2026年4月</caption>
+            <thead>
+                <tr>
+                    <th class="sunday-bg">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="saturday-bg">土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td class="saturday-bg">4</td></tr>
+                <tr><td class="sunday-bg">5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td class="saturday-bg">11</td></tr>
+                <tr><td class="sunday-bg">12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td class="saturday-bg">18</td></tr>
+                <tr><td class="sunday-bg">19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td class="saturday-bg">25</td></tr>
+                <tr><td class="sunday-bg">26</td><td>27</td><td>28</td><td class="holiday-bg" title="昭和の日">29</td><td>30</td><td></td><td></td></tr>
+            </tbody>
+        </table>
+        <!-- 5月 -->
+        <table>
+            <caption>2026年5月</caption>
+            <thead>
+                <tr>
+                    <th class="sunday-bg">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="saturday-bg">土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td></td><td></td><td></td><td></td><td></td><td>1</td><td class="saturday-bg">2</td></tr>
+                <tr><td class="sunday-bg holiday-bg" title="憲法記念日">3</td><td class="sunday-bg holiday-bg" title="みどりの日">4</td><td class="sunday-bg holiday-bg" title="こどもの日">5</td><td class="sunday-bg holiday-bg" title="振替休日">6</td><td>7</td><td>8</td><td class="saturday-bg">9</td></tr>
+                <tr><td class="sunday-bg">10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td class="saturday-bg">16</td></tr>
+                <tr><td class="sunday-bg">17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td class="saturday-bg">23</td></tr>
+                <tr><td class="sunday-bg">24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td class="saturday-bg">30</td></tr>
+                <tr><td class="sunday-bg">31</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+        <!-- 6月 -->
+        <table>
+            <caption>2026年6月</caption>
+            <thead>
+                <tr>
+                    <th class="sunday-bg">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="saturday-bg">土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td class="saturday-bg">6</td></tr>
+                <tr><td class="sunday-bg">7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td class="saturday-bg">13</td></tr>
+                <tr><td class="sunday-bg">14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td class="saturday-bg">20</td></tr>
+                <tr><td class="sunday-bg">21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td class="saturday-bg">27</td></tr>
+                <tr><td class="sunday-bg">28</td><td>29</td><td>30</td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+        <!-- 7月 -->
+        <table>
+            <caption>2026年7月</caption>
+            <thead>
+                <tr>
+                    <th class="sunday-bg">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="saturday-bg">土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td class="saturday-bg">4</td></tr>
+                <tr><td class="sunday-bg">5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td class="saturday-bg">11</td></tr>
+                <tr><td class="sunday-bg">12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td class="saturday-bg">18</td></tr>
+                <tr><td class="sunday-bg">19</td><td class="holiday-bg" title="海の日">20</td><td>21</td><td>22</td><td>23</td><td>24</td><td class="saturday-bg">25</td></tr>
+                <tr><td class="sunday-bg">26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td></tr>
+            </tbody>
+        </table>
+        <!-- 8月 -->
+        <table>
+            <caption>2026年8月</caption>
+            <thead>
+                <tr>
+                    <th class="sunday-bg">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="saturday-bg">土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td class="saturday-bg">1</td></tr>
+                <tr><td class="sunday-bg">2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td class="saturday-bg">8</td></tr>
+                <tr><td class="sunday-bg">9</td><td>10</td><td class="holiday-bg" title="山の日">11</td><td>12</td><td>13</td><td>14</td><td class="saturday-bg">15</td></tr>
+                <tr><td class="sunday-bg">16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td class="saturday-bg">22</td></tr>
+                <tr><td class="sunday-bg">23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td class="saturday-bg">29</td></tr>
+                <tr><td class="sunday-bg">30</td><td>31</td><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+        <!-- 9月 -->
+        <table>
+            <caption>2026年9月</caption>
+            <thead>
+                <tr>
+                    <th class="sunday-bg">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="saturday-bg">土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td class="saturday-bg">5</td></tr>
+                <tr><td class="sunday-bg">6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td class="saturday-bg">12</td></tr>
+                <tr><td class="sunday-bg">13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td class="saturday-bg">19</td></tr>
+                <tr><td class="sunday-bg">20</td><td class="holiday-bg" title="敬老の日">21</td><td class="holiday-bg" title="国民の休日">22</td><td class="holiday-bg" title="秋分の日">23</td><td>24</td><td>25</td><td class="saturday-bg">26</td></tr>
+                <tr><td class="sunday-bg">27</td><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+        <!-- 10月 -->
+        <table>
+            <caption>2026年10月</caption>
+            <thead>
+                <tr>
+                    <th class="sunday-bg">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="saturday-bg">土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td class="saturday-bg">3</td></tr>
+                <tr><td class="sunday-bg">4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td class="saturday-bg">10</td></tr>
+                <tr><td class="sunday-bg">11</td><td class="holiday-bg" title="スポーツの日">12</td><td>13</td><td>14</td><td>15</td><td>16</td><td class="saturday-bg">17</td></tr>
+                <tr><td class="sunday-bg">18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td class="saturday-bg">24</td></tr>
+                <tr><td class="sunday-bg">25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td class="saturday-bg">31</td></tr>
+            </tbody>
+        </table>
+        <!-- 11月 -->
+        <table>
+            <caption>2026年11月</caption>
+            <thead>
+                <tr>
+                    <th class="sunday-bg">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="saturday-bg">土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td class="sunday-bg">1</td><td>2</td><td class="holiday-bg" title="文化の日">3</td><td>4</td><td>5</td><td>6</td><td class="saturday-bg">7</td></tr>
+                <tr><td class="sunday-bg">8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td class="saturday-bg">14</td></tr>
+                <tr><td class="sunday-bg">15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td class="saturday-bg">21</td></tr>
+                <tr><td class="sunday-bg">22</td><td class="holiday-bg" title="勤労感謝の日">23</td><td>24</td><td>25</td><td>26</td><td>27</td><td class="saturday-bg">28</td></tr>
+                <tr><td class="sunday-bg">29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+        <!-- 12月 -->
+        <table>
+            <caption>2026年12月</caption>
+            <thead>
+                <tr>
+                    <th class="sunday-bg">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="saturday-bg">土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td class="saturday-bg">5</td></tr>
+                <tr><td class="sunday-bg">6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td class="saturday-bg">12</td></tr>
+                <tr><td class="sunday-bg">13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td class="saturday-bg">19</td></tr>
+                <tr><td class="sunday-bg">20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td class="saturday-bg">26</td></tr>
+                <tr><td class="sunday-bg">27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
